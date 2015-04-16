@@ -22,6 +22,11 @@
 @implementation SABlurImageView
 
 static NSString *const kFadeAnimationKey = @"Fade";
+
+static NSString *const kCountKey = @"count";
+static NSString *const kDurationKey = @"duration";
+static NSString *const kCGImageKey = @"cgImage";
+
 static NSInteger const kMaxImageCount = 10;
 
 #pragma mark - Init Methods
@@ -117,6 +122,23 @@ static NSInteger const kMaxImageCount = 10;
     [CATransaction commit];
 }
 
+- (void)blurAnimation:(NSDictionary *)dictionary {
+    NSInteger count = ((NSNumber *)dictionary[kCountKey]).integerValue;
+    NSInteger duration = ((NSNumber *)dictionary[kDurationKey]).integerValue;
+    id cgImage = dictionary[kCGImageKey];
+    
+    CATransition *transition = [CATransition animation];
+    transition.duration = duration / count;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    transition.type = kCATransitionFade;
+    transition.fillMode = kCAFillModeForwards;
+    transition.repeatCount = 1;
+    transition.removedOnCompletion = false;
+    transition.delegate = self;
+    [self.layer addAnimation:transition forKey:kFadeAnimationKey];
+    self.layer.contents = cgImage;
+}
+
 #pragma mark - Public Methods
 - (void)addBlurEffect:(CGFloat)boxSize times:(NSUInteger)times {
     if (self.image) {
@@ -141,13 +163,14 @@ static NSInteger const kMaxImageCount = 10;
         
         CGFloat number = sqrt((CGFloat)newBoxSize) / (CGFloat)kMaxImageCount;
         
+        UIImage *image = self.image;
         for (NSInteger index = 0; index < kMaxImageCount; index++) {
             CGFloat value = (double)index * number;
             CGFloat boxSize = value * value;
             
-            self.image = [self.image blurEffect:boxSize];
+            image = [image blurEffect:boxSize];
             
-            CGImageRef cgImage = self.image.CGImage;
+            CGImageRef cgImage = image.CGImage;
             [self.cgImages addObject:(__bridge id)cgImage];
         }
     }
@@ -176,24 +199,13 @@ static NSInteger const kMaxImageCount = 10;
 }
 
 - (void)startBlurAnimation:(CGFloat)duration {
-    CGFloat count = (CGFloat)self.cgImages.count;
+    NSInteger count = self.cgImages.count;
     NSInteger index = 0;
     for (id cgImage in self.cgImages) {
-        CGFloat delay = (duration / count) * (CGFloat)NSEC_PER_SEC * (CGFloat)index;
-        dispatch_time_t time  = dispatch_time(DISPATCH_TIME_NOW, (int64_t)delay);
-        dispatch_after(time, dispatch_get_main_queue(), ^{
-            CATransition *transition = [CATransition animation];
-            transition.duration = duration / count;
-            transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-            transition.type = kCATransitionFade;
-            transition.fillMode = kCAFillModeForwards;
-            transition.repeatCount = 1;
-            transition.removedOnCompletion = false;
-            transition.delegate = self;
-            [self.layer addAnimation:transition forKey:kFadeAnimationKey];
-            self.layer.contents = cgImage;
-        });
+        NSTimeInterval delay = (NSTimeInterval)duration / (NSTimeInterval)count * (NSTimeInterval)index++;
+        [self performSelector:@selector(blurAnimation:) withObject:@{ kDurationKey: @(duration), kCountKey: @(count), kCGImageKey : cgImage } afterDelay:delay];
     }
+    self.cgImages = [[self.cgImages reverseObjectEnumerator] allObjects].mutableCopy;
 }
 
 #pragma mark - CAAnimationDelegate

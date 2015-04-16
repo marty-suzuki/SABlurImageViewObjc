@@ -46,7 +46,7 @@
     free(outBuffer.data);
     CFRelease(inBitmapData);
     
-    CGColorSpaceRelease(colorSpace);
+    //CGColorSpaceRelease(colorSpace);
     CGImageRelease(imageRef);
     
     return  bluredImage;
