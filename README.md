@@ -36,7 +36,7 @@ Add the [SABlurImageViewObjc](./SABlurImageViewObjc) directory to your project.
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-You have to write `#import "SABlurImageView"`.
+You have to write `#import "SABlurImageView.h"`.
 
 If you want to apply blur effect for image
 
