@@ -1,0 +1,6 @@
+framework module SABlurImageViewObjc {
+  umbrella header "Pods-SABlurImageViewObjc-umbrella.h"
+
+  export *
+  module * { export * }
+}
