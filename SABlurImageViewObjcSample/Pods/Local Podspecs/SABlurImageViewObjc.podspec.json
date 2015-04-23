@@ -1,6 +1,6 @@
 {
   "name": "SABlurImageViewObjc",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "This is Objective-C version of SABlurImageView.",
   "homepage": "https://github.com/szk-atmosphere/SABlurImageViewObjc",
   "license": "MIT",
@@ -9,11 +9,11 @@
   },
   "source": {
     "git": "https://github.com/szk-atmosphere/SABlurImageViewObjc.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "social_media_url": "https://twitter.com/SzkAtmosphere",
   "platforms": {
-    "ios": "8.0"
+    "ios": "7.0"
   },
   "requires_arc": true,
   "source_files": "SABlurImageViewObjc/*.{h,m}",

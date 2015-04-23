@@ -7,281 +7,244 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15AB9BC8EB666B12E0440529 /* SABlurImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = D1157AE91053BD1D93789622 /* SABlurImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		168266C414BD3E9303D3341C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB7909985D9E438CF753DEC /* Foundation.framework */; };
-		1EB9C08AA80602677F2F8E28 /* SABlurImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B32DEE4CA1619E55B3C92AC /* SABlurImageView.m */; };
-		2EAF433C6206E33646B0D66B /* UIImage+BlurEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD5CAE661E447F33E2DC4F2 /* UIImage+BlurEffect.m */; };
-		77DCF541B65ADDD0F2E316EF /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DDF00AA28452C253F352B97 /* Accelerate.framework */; };
-		7B348738DD4EC1DC19E85C70 /* SABlurImageViewObjc.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 51430E67FB374097FE7CC994 /* SABlurImageViewObjc.bundle */; };
-		90CBBDC7D1F426B78AE3BFA4 /* Pods-SABlurImageViewObjc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91249AAD80EEC64410852A6B /* Pods-SABlurImageViewObjc-dummy.m */; };
-		A5C6FA2AA9A182B9B9EB43AD /* Pods-SABlurImageViewObjc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8093F7FAC66F0696F343094F /* Pods-SABlurImageViewObjc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE924F2F2029A944DBF378D4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00BCE30826FCA19B139F085 /* QuartzCore.framework */; };
-		BC3069BFDA485E196D057E2B /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01B30F9C4C6DB3E382230A57 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD5A8A527C137E3241001C30 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D94BAD980683EF088370C16 /* Pods-dummy.m */; };
-		CB0CD1390F57ABBA65B7C9CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB7909985D9E438CF753DEC /* Foundation.framework */; };
-		E81F1400DBD383E61AFDA7E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389D7DB1BF1CF5CAE52589B8 /* UIKit.framework */; };
-		F2F5F81B4081BC272C11389E /* UIImage+BlurEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E417C3D24AFA8F75DEA0329 /* UIImage+BlurEffect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A0AF95D1148D459403FAF14 /* SABlurImageViewObjc.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FBDED63FF4B74523B9ADFE9 /* SABlurImageViewObjc.bundle */; };
+		0E0C1316156F313F93C54A52 /* Pods-SABlurImageViewObjc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F5FCD6BF566A3D5786E078 /* Pods-SABlurImageViewObjc-dummy.m */; };
+		303CAB7CFCF2E8383C0065F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD828BAA8FB1AFAC9691292 /* UIKit.framework */; };
+		35EDBB3D4EE99C73564E097E /* UIImage+BlurEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E80B0002AD2D5077B4607D /* UIImage+BlurEffect.m */; };
+		36C88ACCF32E47754B5A79D8 /* SABlurImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = DB0C365E0DEE7ACF9D80ABB8 /* SABlurImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A9E89BAAB1339C65CF1F07A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9531E695CF85B4FC802CA29 /* Foundation.framework */; };
+		67E46C200565AB3005145686 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1862208CFED8811D24C00EED /* Accelerate.framework */; };
+		70196C46EBF78D5D98328B04 /* UIImage+BlurEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC65173F37FFB081D1D9999 /* UIImage+BlurEffect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		793A7F8224EE4DD07FFE8D2D /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A89566185B111356D3155D /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		961A329223825621DF1BF8E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9531E695CF85B4FC802CA29 /* Foundation.framework */; };
+		B442DBFCF7971F2F85A45AC8 /* Pods-SABlurImageViewObjc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9467A5B4D75F7DC02A4A5AA6 /* Pods-SABlurImageViewObjc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF1C274C8FF040693D857F8E /* SABlurImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A0F7091A32ACEB85C2149 /* SABlurImageView.m */; };
+		D6A28C4E37CBE33CD52EC864 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37697EAEFCA1CC42B4B90DCF /* QuartzCore.framework */; };
+		E69EC3DD63E70ECB75B0AD69 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AC7641E1248B6D4E5AD79B /* Pods-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		43D3B18840EE7DD13880414A /* PBXContainerItemProxy */ = {
+		2FB9CE48B539CEDB8955AB29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 45F91C10008B95A8F98EED82 /* Project object */;
+			containerPortal = 187885945792EF7774C070D1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FAFE2E97339C4F73523E0DFF;
-			remoteInfo = "Pods-SABlurImageViewObjc-SABlurImageViewObjc";
-		};
-		B947B2E4CFB95FF4D48661D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 45F91C10008B95A8F98EED82 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 55D47DCC7362CA3F3E707F23;
+			remoteGlobalIDString = 756190135E61D22801DF876B;
 			remoteInfo = "Pods-SABlurImageViewObjc";
+		};
+		72F29DC84384810FB0B8128B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187885945792EF7774C070D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04D31040320001A7BCE990B9;
+			remoteInfo = "Pods-SABlurImageViewObjc-SABlurImageViewObjc";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00789F66715C592CCA8BA068 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		01B30F9C4C6DB3E382230A57 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		0CE884539C149AF5883C81C0 /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		0DDF00AA28452C253F352B97 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
-		144FF16B2800FC013A735CC0 /* Pods-SABlurImageViewObjc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SABlurImageViewObjc.xcconfig"; sourceTree = "<group>"; };
-		1CD5CAE661E447F33E2DC4F2 /* UIImage+BlurEffect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlurEffect.m"; sourceTree = "<group>"; };
-		1FB27259F550E4E3AF01BE79 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		2BB18C3D22BBD020F326AD81 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		2CDF50F3B12A89E6D5895F7D /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		2F0A57190ACF1FE13914C38E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		324BF486375C0F427FE713C6 /* Pods-SABlurImageViewObjc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SABlurImageViewObjc-prefix.pch"; sourceTree = "<group>"; };
-		33BF3A754A7E06C42111D53F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		389D7DB1BF1CF5CAE52589B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		4D94BAD980683EF088370C16 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		4FB7909985D9E438CF753DEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4FFCE5653128DCAEB3181A71 /* Pods-SABlurImageViewObjc-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SABlurImageViewObjc-Private.xcconfig"; sourceTree = "<group>"; };
-		51430E67FB374097FE7CC994 /* SABlurImageViewObjc.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SABlurImageViewObjc.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		78DCB22DB8140CBFD78C106B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B32DEE4CA1619E55B3C92AC /* SABlurImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SABlurImageView.m; sourceTree = "<group>"; };
-		7E417C3D24AFA8F75DEA0329 /* UIImage+BlurEffect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+BlurEffect.h"; sourceTree = "<group>"; };
-		8093F7FAC66F0696F343094F /* Pods-SABlurImageViewObjc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SABlurImageViewObjc-umbrella.h"; sourceTree = "<group>"; };
-		88C5C6FAC27CFB7F7F9F0E66 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		8E3DD634E0F35FFAF3751174 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		91249AAD80EEC64410852A6B /* Pods-SABlurImageViewObjc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SABlurImageViewObjc-dummy.m"; sourceTree = "<group>"; };
-		B17CAB625032819386DEBEFA /* SABlurImageViewObjc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SABlurImageViewObjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2C4CB280B3D735DE9A86DB4 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C558C7BF0125A257059BAF46 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1157AE91053BD1D93789622 /* SABlurImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SABlurImageView.h; sourceTree = "<group>"; };
-		E832438DA7057812417A55A3 /* Pods-SABlurImageViewObjc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SABlurImageViewObjc.modulemap"; sourceTree = "<group>"; };
-		F00BCE30826FCA19B139F085 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		02E475A2935DEBC4D9E43FCF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		095D3E25B5F2A8E3B643A278 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		0E19D92E41E67C9ECE8F3E3C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		1862208CFED8811D24C00EED /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		2FBDED63FF4B74523B9ADFE9 /* SABlurImageViewObjc.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SABlurImageViewObjc.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		35588DE15BC1BFC7404DC2C8 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		37697EAEFCA1CC42B4B90DCF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		48AC7641E1248B6D4E5AD79B /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		4BC65173F37FFB081D1D9999 /* UIImage+BlurEffect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+BlurEffect.h"; sourceTree = "<group>"; };
+		4BDB199036B4EFCFC6F3E24A /* Pods-SABlurImageViewObjc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SABlurImageViewObjc.xcconfig"; sourceTree = "<group>"; };
+		4FC3FF176989ED4AC5F3D52E /* Pods-SABlurImageViewObjc-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SABlurImageViewObjc-Private.xcconfig"; sourceTree = "<group>"; };
+		591CAD7D36A7116FE1053225 /* SABlurImageViewObjc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SABlurImageViewObjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A0FC92BAEFD63A4764C222 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77E30CB804F4439AAAD10840 /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		7F9A0F7091A32ACEB85C2149 /* SABlurImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SABlurImageView.m; sourceTree = "<group>"; };
+		9467A5B4D75F7DC02A4A5AA6 /* Pods-SABlurImageViewObjc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SABlurImageViewObjc-umbrella.h"; sourceTree = "<group>"; };
+		9CD828BAA8FB1AFAC9691292 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A321BF68BD077C56F7E105D8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		A5A89566185B111356D3155D /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		B1E80B0002AD2D5077B4607D /* UIImage+BlurEffect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlurEffect.m"; sourceTree = "<group>"; };
+		B9531E695CF85B4FC802CA29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BC9F62C405F5ED1A45ADD7E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4F5FCD6BF566A3D5786E078 /* Pods-SABlurImageViewObjc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SABlurImageViewObjc-dummy.m"; sourceTree = "<group>"; };
+		CCDD32820A7694E76D2509B8 /* Pods-SABlurImageViewObjc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SABlurImageViewObjc-prefix.pch"; sourceTree = "<group>"; };
+		D500C7C22D3F14785C4967E2 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		D51AB0A313637009468784B2 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		DB0C365E0DEE7ACF9D80ABB8 /* SABlurImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SABlurImageView.h; sourceTree = "<group>"; };
+		F631D184C5C0A32F4DA73EAB /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F8558A6B74929FFEEEAA633D /* Pods-SABlurImageViewObjc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SABlurImageViewObjc.modulemap"; sourceTree = "<group>"; };
+		FD33F4B28392FE1A18BBC70F /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B8FF0F7080E8CF226CD3E388 /* Frameworks */ = {
+		15E192DAB2BB2A8D19C617CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BDC489DCB65AEB8AD8D45996 /* Frameworks */ = {
+		248334B278F8D4CCB69020E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77DCF541B65ADDD0F2E316EF /* Accelerate.framework in Frameworks */,
-				CB0CD1390F57ABBA65B7C9CC /* Foundation.framework in Frameworks */,
-				AE924F2F2029A944DBF378D4 /* QuartzCore.framework in Frameworks */,
-				E81F1400DBD383E61AFDA7E5 /* UIKit.framework in Frameworks */,
+				3A9E89BAAB1339C65CF1F07A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9E8CF2950D5B1261C937067 /* Frameworks */ = {
+		F735C6EEE650D7BFB5990E47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				168266C414BD3E9303D3341C /* Foundation.framework in Frameworks */,
+				67E46C200565AB3005145686 /* Accelerate.framework in Frameworks */,
+				961A329223825621DF1BF8E6 /* Foundation.framework in Frameworks */,
+				D6A28C4E37CBE33CD52EC864 /* QuartzCore.framework in Frameworks */,
+				303CAB7CFCF2E8383C0065F6 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05984D686105C59940426C31 /* Targets Support Files */ = {
+		43D2E987A38DBEAD6813F5F7 /* SABlurImageViewObjc */ = {
 			isa = PBXGroup;
 			children = (
-				468DCDAE91509D039A0F6617 /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		0ECABC96CD9EB934E815E134 /* SABlurImageViewObjc */ = {
-			isa = PBXGroup;
-			children = (
-				D1157AE91053BD1D93789622 /* SABlurImageView.h */,
-				7B32DEE4CA1619E55B3C92AC /* SABlurImageView.m */,
-				7E417C3D24AFA8F75DEA0329 /* UIImage+BlurEffect.h */,
-				1CD5CAE661E447F33E2DC4F2 /* UIImage+BlurEffect.m */,
-			);
-			path = SABlurImageViewObjc;
-			sourceTree = "<group>";
-		};
-		189C2C4C25FFCD57E20A7FBC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A1AE83FF9F9028A82FEA3037 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1B97FEFA12914DA7E040D5F7 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				51F842ADD88FB0DBA879F85C /* SABlurImageViewObjc */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		468DCDAE91509D039A0F6617 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2F0A57190ACF1FE13914C38E /* Info.plist */,
-				0CE884539C149AF5883C81C0 /* Pods.modulemap */,
-				00789F66715C592CCA8BA068 /* Pods-acknowledgements.markdown */,
-				88C5C6FAC27CFB7F7F9F0E66 /* Pods-acknowledgements.plist */,
-				4D94BAD980683EF088370C16 /* Pods-dummy.m */,
-				2CDF50F3B12A89E6D5895F7D /* Pods-environment.h */,
-				2BB18C3D22BBD020F326AD81 /* Pods-frameworks.sh */,
-				8E3DD634E0F35FFAF3751174 /* Pods-resources.sh */,
-				01B30F9C4C6DB3E382230A57 /* Pods-umbrella.h */,
-				33BF3A754A7E06C42111D53F /* Pods.debug.xcconfig */,
-				1FB27259F550E4E3AF01BE79 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
-			sourceTree = "<group>";
-		};
-		51F842ADD88FB0DBA879F85C /* SABlurImageViewObjc */ = {
-			isa = PBXGroup;
-			children = (
-				0ECABC96CD9EB934E815E134 /* SABlurImageViewObjc */,
-				936919EB88BB1E2F5F9DFBBD /* Support Files */,
+				BC53B2ACF63CC755EFC69F5C /* SABlurImageViewObjc */,
+				C35AB7BA51BA4A91DB656BA6 /* Support Files */,
 			);
 			name = SABlurImageViewObjc;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		936919EB88BB1E2F5F9DFBBD /* Support Files */ = {
+		4E0B50636D1EA944A270A4E5 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				78DCB22DB8140CBFD78C106B /* Info.plist */,
-				E832438DA7057812417A55A3 /* Pods-SABlurImageViewObjc.modulemap */,
-				144FF16B2800FC013A735CC0 /* Pods-SABlurImageViewObjc.xcconfig */,
-				4FFCE5653128DCAEB3181A71 /* Pods-SABlurImageViewObjc-Private.xcconfig */,
-				91249AAD80EEC64410852A6B /* Pods-SABlurImageViewObjc-dummy.m */,
-				324BF486375C0F427FE713C6 /* Pods-SABlurImageViewObjc-prefix.pch */,
-				8093F7FAC66F0696F343094F /* Pods-SABlurImageViewObjc-umbrella.h */,
+				1862208CFED8811D24C00EED /* Accelerate.framework */,
+				B9531E695CF85B4FC802CA29 /* Foundation.framework */,
+				37697EAEFCA1CC42B4B90DCF /* QuartzCore.framework */,
+				9CD828BAA8FB1AFAC9691292 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		58025A17F8D0976E7D68C047 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02E475A2935DEBC4D9E43FCF /* Pods.framework */,
+				2FBDED63FF4B74523B9ADFE9 /* SABlurImageViewObjc.bundle */,
+				591CAD7D36A7116FE1053225 /* SABlurImageViewObjc.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A271ED7AC6C7BB3AE4F71EE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C03DA4068238265394D6B91E /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8C583B3AF8503313B83AE125 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43D2E987A38DBEAD6813F5F7 /* SABlurImageViewObjc */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		8F62D8E3695E68DA41C8182B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E0B50636D1EA944A270A4E5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC53B2ACF63CC755EFC69F5C /* SABlurImageViewObjc */ = {
+			isa = PBXGroup;
+			children = (
+				DB0C365E0DEE7ACF9D80ABB8 /* SABlurImageView.h */,
+				7F9A0F7091A32ACEB85C2149 /* SABlurImageView.m */,
+				4BC65173F37FFB081D1D9999 /* UIImage+BlurEffect.h */,
+				B1E80B0002AD2D5077B4607D /* UIImage+BlurEffect.m */,
+			);
+			path = SABlurImageViewObjc;
+			sourceTree = "<group>";
+		};
+		BE89CCF80A5BCDD6E05B47CA = {
+			isa = PBXGroup;
+			children = (
+				35588DE15BC1BFC7404DC2C8 /* Podfile */,
+				8C583B3AF8503313B83AE125 /* Development Pods */,
+				8F62D8E3695E68DA41C8182B /* Frameworks */,
+				58025A17F8D0976E7D68C047 /* Products */,
+				7A271ED7AC6C7BB3AE4F71EE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		C03DA4068238265394D6B91E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72A0FC92BAEFD63A4764C222 /* Info.plist */,
+				77E30CB804F4439AAAD10840 /* Pods.modulemap */,
+				F631D184C5C0A32F4DA73EAB /* Pods-acknowledgements.markdown */,
+				D51AB0A313637009468784B2 /* Pods-acknowledgements.plist */,
+				48AC7641E1248B6D4E5AD79B /* Pods-dummy.m */,
+				D500C7C22D3F14785C4967E2 /* Pods-environment.h */,
+				FD33F4B28392FE1A18BBC70F /* Pods-frameworks.sh */,
+				095D3E25B5F2A8E3B643A278 /* Pods-resources.sh */,
+				A5A89566185B111356D3155D /* Pods-umbrella.h */,
+				A321BF68BD077C56F7E105D8 /* Pods.debug.xcconfig */,
+				0E19D92E41E67C9ECE8F3E3C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		C35AB7BA51BA4A91DB656BA6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC9F62C405F5ED1A45ADD7E9 /* Info.plist */,
+				F8558A6B74929FFEEEAA633D /* Pods-SABlurImageViewObjc.modulemap */,
+				4BDB199036B4EFCFC6F3E24A /* Pods-SABlurImageViewObjc.xcconfig */,
+				4FC3FF176989ED4AC5F3D52E /* Pods-SABlurImageViewObjc-Private.xcconfig */,
+				C4F5FCD6BF566A3D5786E078 /* Pods-SABlurImageViewObjc-dummy.m */,
+				CCDD32820A7694E76D2509B8 /* Pods-SABlurImageViewObjc-prefix.pch */,
+				9467A5B4D75F7DC02A4A5AA6 /* Pods-SABlurImageViewObjc-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "SABlurImageViewObjcSample/Pods/Target Support Files/Pods-SABlurImageViewObjc";
 			sourceTree = "<group>";
 		};
-		A1AE83FF9F9028A82FEA3037 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				0DDF00AA28452C253F352B97 /* Accelerate.framework */,
-				4FB7909985D9E438CF753DEC /* Foundation.framework */,
-				F00BCE30826FCA19B139F085 /* QuartzCore.framework */,
-				389D7DB1BF1CF5CAE52589B8 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		BA831ED4FB2616837861596C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C558C7BF0125A257059BAF46 /* Pods.framework */,
-				51430E67FB374097FE7CC994 /* SABlurImageViewObjc.bundle */,
-				B17CAB625032819386DEBEFA /* SABlurImageViewObjc.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EF66E2B4C044B41B85B274DD = {
-			isa = PBXGroup;
-			children = (
-				B2C4CB280B3D735DE9A86DB4 /* Podfile */,
-				1B97FEFA12914DA7E040D5F7 /* Development Pods */,
-				189C2C4C25FFCD57E20A7FBC /* Frameworks */,
-				BA831ED4FB2616837861596C /* Products */,
-				05984D686105C59940426C31 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5A2994D29CFE448822FFB0E5 /* Headers */ = {
+		54DA01407DE0F3AE97484734 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC3069BFDA485E196D057E2B /* Pods-umbrella.h in Headers */,
+				793A7F8224EE4DD07FFE8D2D /* Pods-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA4955DFA8D25CE6F7C8E155 /* Headers */ = {
+		72DEC0153D6EA48ECA5BA406 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C6FA2AA9A182B9B9EB43AD /* Pods-SABlurImageViewObjc-umbrella.h in Headers */,
-				15AB9BC8EB666B12E0440529 /* SABlurImageView.h in Headers */,
-				F2F5F81B4081BC272C11389E /* UIImage+BlurEffect.h in Headers */,
+				B442DBFCF7971F2F85A45AC8 /* Pods-SABlurImageViewObjc-umbrella.h in Headers */,
+				36C88ACCF32E47754B5A79D8 /* SABlurImageView.h in Headers */,
+				70196C46EBF78D5D98328B04 /* UIImage+BlurEffect.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		55D47DCC7362CA3F3E707F23 /* Pods-SABlurImageViewObjc */ = {
+		04D31040320001A7BCE990B9 /* Pods-SABlurImageViewObjc-SABlurImageViewObjc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D01D15E2B200EC493FB4EB7B /* Build configuration list for PBXNativeTarget "Pods-SABlurImageViewObjc" */;
+			buildConfigurationList = C674EF4DACF3F614E82591D4 /* Build configuration list for PBXNativeTarget "Pods-SABlurImageViewObjc-SABlurImageViewObjc" */;
 			buildPhases = (
-				DF90F191AA695E86E0FB916D /* Sources */,
-				BDC489DCB65AEB8AD8D45996 /* Frameworks */,
-				ECCFF04F3109DF5703CC800B /* Resources */,
-				EA4955DFA8D25CE6F7C8E155 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E63DD45A25A0D894F6831168 /* PBXTargetDependency */,
-			);
-			name = "Pods-SABlurImageViewObjc";
-			productName = "Pods-SABlurImageViewObjc";
-			productReference = B17CAB625032819386DEBEFA /* SABlurImageViewObjc.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B5CD93A5BB9AA44367FE1999 /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 29DBD67EF2C5730D4665974A /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				232A49E8EFFC60EFFCA5EAD7 /* Sources */,
-				F9E8CF2950D5B1261C937067 /* Frameworks */,
-				5A2994D29CFE448822FFB0E5 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E2FBBD037561341C4CF6B535 /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = C558C7BF0125A257059BAF46 /* Pods.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FAFE2E97339C4F73523E0DFF /* Pods-SABlurImageViewObjc-SABlurImageViewObjc */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0B71EACC29953F24F5E781A1 /* Build configuration list for PBXNativeTarget "Pods-SABlurImageViewObjc-SABlurImageViewObjc" */;
-			buildPhases = (
-				F307E31E8DFA2657EF5D9809 /* Sources */,
-				B8FF0F7080E8CF226CD3E388 /* Frameworks */,
-				0560E8EF7C5F55521E0C3231 /* Resources */,
+				637FBB27DCCC124422536341 /* Sources */,
+				15E192DAB2BB2A8D19C617CE /* Frameworks */,
+				055193F05476F925FE9E3598 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -289,99 +252,136 @@
 			);
 			name = "Pods-SABlurImageViewObjc-SABlurImageViewObjc";
 			productName = "Pods-SABlurImageViewObjc-SABlurImageViewObjc";
-			productReference = 51430E67FB374097FE7CC994 /* SABlurImageViewObjc.bundle */;
+			productReference = 2FBDED63FF4B74523B9ADFE9 /* SABlurImageViewObjc.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		54C916135D83CED3FBEE8218 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6975AC10A3CF747447C8372A /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				8EB265B19E6F9DADE081A183 /* Sources */,
+				248334B278F8D4CCB69020E3 /* Frameworks */,
+				54DA01407DE0F3AE97484734 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2420E15D4A84B8035B84B9C9 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 02E475A2935DEBC4D9E43FCF /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		756190135E61D22801DF876B /* Pods-SABlurImageViewObjc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F1BCA5F2E92649E3261359C /* Build configuration list for PBXNativeTarget "Pods-SABlurImageViewObjc" */;
+			buildPhases = (
+				CCBFC22340DE0A124123D87F /* Sources */,
+				F735C6EEE650D7BFB5990E47 /* Frameworks */,
+				BD80E860B2B0AF7F04568CBE /* Resources */,
+				72DEC0153D6EA48ECA5BA406 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A1ED4E32DC217B25C82D1FE /* PBXTargetDependency */,
+			);
+			name = "Pods-SABlurImageViewObjc";
+			productName = "Pods-SABlurImageViewObjc";
+			productReference = 591CAD7D36A7116FE1053225 /* SABlurImageViewObjc.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		45F91C10008B95A8F98EED82 /* Project object */ = {
+		187885945792EF7774C070D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 999FF4D2FDBC84F85D758AC9 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 41EB97D7E255F8E1AC8E48AC /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = EF66E2B4C044B41B85B274DD;
-			productRefGroup = BA831ED4FB2616837861596C /* Products */;
+			mainGroup = BE89CCF80A5BCDD6E05B47CA;
+			productRefGroup = 58025A17F8D0976E7D68C047 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B5CD93A5BB9AA44367FE1999 /* Pods */,
-				55D47DCC7362CA3F3E707F23 /* Pods-SABlurImageViewObjc */,
-				FAFE2E97339C4F73523E0DFF /* Pods-SABlurImageViewObjc-SABlurImageViewObjc */,
+				54C916135D83CED3FBEE8218 /* Pods */,
+				756190135E61D22801DF876B /* Pods-SABlurImageViewObjc */,
+				04D31040320001A7BCE990B9 /* Pods-SABlurImageViewObjc-SABlurImageViewObjc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0560E8EF7C5F55521E0C3231 /* Resources */ = {
+		055193F05476F925FE9E3598 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ECCFF04F3109DF5703CC800B /* Resources */ = {
+		BD80E860B2B0AF7F04568CBE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B348738DD4EC1DC19E85C70 /* SABlurImageViewObjc.bundle in Resources */,
+				0A0AF95D1148D459403FAF14 /* SABlurImageViewObjc.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		232A49E8EFFC60EFFCA5EAD7 /* Sources */ = {
+		637FBB27DCCC124422536341 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD5A8A527C137E3241001C30 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF90F191AA695E86E0FB916D /* Sources */ = {
+		8EB265B19E6F9DADE081A183 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90CBBDC7D1F426B78AE3BFA4 /* Pods-SABlurImageViewObjc-dummy.m in Sources */,
-				1EB9C08AA80602677F2F8E28 /* SABlurImageView.m in Sources */,
-				2EAF433C6206E33646B0D66B /* UIImage+BlurEffect.m in Sources */,
+				E69EC3DD63E70ECB75B0AD69 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F307E31E8DFA2657EF5D9809 /* Sources */ = {
+		CCBFC22340DE0A124123D87F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0C1316156F313F93C54A52 /* Pods-SABlurImageViewObjc-dummy.m in Sources */,
+				BF1C274C8FF040693D857F8E /* SABlurImageView.m in Sources */,
+				35EDBB3D4EE99C73564E097E /* UIImage+BlurEffect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E2FBBD037561341C4CF6B535 /* PBXTargetDependency */ = {
+		2420E15D4A84B8035B84B9C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SABlurImageViewObjc";
-			target = 55D47DCC7362CA3F3E707F23 /* Pods-SABlurImageViewObjc */;
-			targetProxy = B947B2E4CFB95FF4D48661D4 /* PBXContainerItemProxy */;
+			target = 756190135E61D22801DF876B /* Pods-SABlurImageViewObjc */;
+			targetProxy = 2FB9CE48B539CEDB8955AB29 /* PBXContainerItemProxy */;
 		};
-		E63DD45A25A0D894F6831168 /* PBXTargetDependency */ = {
+		7A1ED4E32DC217B25C82D1FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SABlurImageViewObjc-SABlurImageViewObjc";
-			target = FAFE2E97339C4F73523E0DFF /* Pods-SABlurImageViewObjc-SABlurImageViewObjc */;
-			targetProxy = 43D3B18840EE7DD13880414A /* PBXContainerItemProxy */;
+			target = 04D31040320001A7BCE990B9 /* Pods-SABlurImageViewObjc-SABlurImageViewObjc */;
+			targetProxy = 72F29DC84384810FB0B8128B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		106E03DCB16E2F68716F7323 /* Debug */ = {
+		021BC8EBB4BE8EE2ACAE4711 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -413,28 +413,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		2AE15F85C3621CB5401B9860 /* Release */ = {
+		1E59ECAD60B0E39E5DE48EDF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = SABlurImageViewObjc;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		501D263B23BFBE5E51450423 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33BF3A754A7E06C42111D53F /* Pods.debug.xcconfig */;
+			baseConfigurationReference = A321BF68BD077C56F7E105D8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -445,7 +433,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -461,7 +449,34 @@
 			};
 			name = Debug;
 		};
-		595CDE48484409C153BF652A /* Debug */ = {
+		387F6DC7F79D9406EE951FAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FC3FF176989ED4AC5F3D52E /* Pods-SABlurImageViewObjc-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SABlurImageViewObjc/Pods-SABlurImageViewObjc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SABlurImageViewObjc/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SABlurImageViewObjc/Pods-SABlurImageViewObjc.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SABlurImageViewObjc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5AA3417A8FC5836C7BD1EA0C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods";
@@ -473,9 +488,36 @@
 			};
 			name = Debug;
 		};
-		98C6FC8BCE76F21F081B5C7D /* Release */ = {
+		5C19B41D29A4BEC79BECDB3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FB27259F550E4E3AF01BE79 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 4FC3FF176989ED4AC5F3D52E /* Pods-SABlurImageViewObjc-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SABlurImageViewObjc/Pods-SABlurImageViewObjc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SABlurImageViewObjc/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SABlurImageViewObjc/Pods-SABlurImageViewObjc.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SABlurImageViewObjc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90140FB60E9CD7EA5C04CC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E19D92E41E67C9ECE8F3E3C /* Pods.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -486,7 +528,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -502,7 +544,7 @@
 			};
 			name = Release;
 		};
-		A190E3FDDB9F4629E3E177A9 /* Release */ = {
+		AA9933167BBCA33460AC4C41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -529,107 +571,65 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		C0AB597B7027BA7D19289CB3 /* Release */ = {
+		B8363BD71E0E9CFEA71A01B8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FFCE5653128DCAEB3181A71 /* Pods-SABlurImageViewObjc-Private.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SABlurImageViewObjc/Pods-SABlurImageViewObjc-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-SABlurImageViewObjc/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SABlurImageViewObjc/Pods-SABlurImageViewObjc.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = SABlurImageViewObjc;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
-		};
-		C80F7FDAAC050860B1382CE8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FFCE5653128DCAEB3181A71 /* Pods-SABlurImageViewObjc-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SABlurImageViewObjc/Pods-SABlurImageViewObjc-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-SABlurImageViewObjc/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SABlurImageViewObjc/Pods-SABlurImageViewObjc.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SABlurImageViewObjc;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B71EACC29953F24F5E781A1 /* Build configuration list for PBXNativeTarget "Pods-SABlurImageViewObjc-SABlurImageViewObjc" */ = {
+		41EB97D7E255F8E1AC8E48AC /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				595CDE48484409C153BF652A /* Debug */,
-				2AE15F85C3621CB5401B9860 /* Release */,
+				021BC8EBB4BE8EE2ACAE4711 /* Debug */,
+				AA9933167BBCA33460AC4C41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		29DBD67EF2C5730D4665974A /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		6975AC10A3CF747447C8372A /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				501D263B23BFBE5E51450423 /* Debug */,
-				98C6FC8BCE76F21F081B5C7D /* Release */,
+				1E59ECAD60B0E39E5DE48EDF /* Debug */,
+				90140FB60E9CD7EA5C04CC3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		999FF4D2FDBC84F85D758AC9 /* Build configuration list for PBXProject "Pods" */ = {
+		8F1BCA5F2E92649E3261359C /* Build configuration list for PBXNativeTarget "Pods-SABlurImageViewObjc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				106E03DCB16E2F68716F7323 /* Debug */,
-				A190E3FDDB9F4629E3E177A9 /* Release */,
+				5C19B41D29A4BEC79BECDB3C /* Debug */,
+				387F6DC7F79D9406EE951FAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D01D15E2B200EC493FB4EB7B /* Build configuration list for PBXNativeTarget "Pods-SABlurImageViewObjc" */ = {
+		C674EF4DACF3F614E82591D4 /* Build configuration list for PBXNativeTarget "Pods-SABlurImageViewObjc-SABlurImageViewObjc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C80F7FDAAC050860B1382CE8 /* Debug */,
-				C0AB597B7027BA7D19289CB3 /* Release */,
+				5AA3417A8FC5836C7BD1EA0C /* Debug */,
+				B8363BD71E0E9CFEA71A01B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 45F91C10008B95A8F98EED82 /* Project object */;
+	rootObject = 187885945792EF7774C070D1 /* Project object */;
 }
