@@ -1,5 +1,5 @@
 PODS:
-  - SABlurImageViewObjc (0.1.0)
+  - SABlurImageViewObjc (0.2.0)
 
 DEPENDENCIES:
   - SABlurImageViewObjc (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SABlurImageViewObjc: 1788310871f36c8546e2c8d03cb89c808a770c8a
+  SABlurImageViewObjc: dd7dccc6b1b437f53aadad645d9aa5dfb2346846
 
 COCOAPODS: 0.36.1

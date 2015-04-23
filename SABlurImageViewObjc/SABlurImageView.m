@@ -22,11 +22,6 @@
 @implementation SABlurImageView
 
 static NSString *const kFadeAnimationKey = @"Fade";
-
-static NSString *const kCountKey = @"count";
-static NSString *const kDurationKey = @"duration";
-static NSString *const kCGImageKey = @"cgImage";
-
 static NSInteger const kMaxImageCount = 10;
 
 #pragma mark - Init Methods
@@ -122,11 +117,7 @@ static NSInteger const kMaxImageCount = 10;
     [CATransaction commit];
 }
 
-- (void)blurAnimation:(NSDictionary *)dictionary {
-    NSInteger count = ((NSNumber *)dictionary[kCountKey]).integerValue;
-    NSInteger duration = ((NSNumber *)dictionary[kDurationKey]).integerValue;
-    id cgImage = dictionary[kCGImageKey];
-    
+- (void)blurAnimation:(NSInteger)count dutation:(NSTimeInterval)duration cgImage:(id)cgImage {
     CATransition *transition = [CATransition animation];
     transition.duration = duration / count;
     transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
@@ -203,7 +194,9 @@ static NSInteger const kMaxImageCount = 10;
     NSInteger index = 0;
     for (id cgImage in self.cgImages) {
         NSTimeInterval delay = (NSTimeInterval)duration / (NSTimeInterval)count * (NSTimeInterval)index++;
-        [self performSelector:@selector(blurAnimation:) withObject:@{ kDurationKey: @(duration), kCountKey: @(count), kCGImageKey : cgImage } afterDelay:delay];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delay * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            [self blurAnimation:count dutation:duration cgImage:cgImage];
+        });
     }
     self.cgImages = [[self.cgImages reverseObjectEnumerator] allObjects].mutableCopy;
 }

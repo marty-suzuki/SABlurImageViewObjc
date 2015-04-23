@@ -61,6 +61,8 @@
     if (self.applyButton) {
         [self.view insertSubview:self.imageView belowSubview:self.applyButton];
     }
+    
+    [self.view layoutIfNeeded];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -9,6 +9,6 @@
 // SABlurImageViewObjc
 #define COCOAPODS_POD_AVAILABLE_SABlurImageViewObjc
 #define COCOAPODS_VERSION_MAJOR_SABlurImageViewObjc 0
-#define COCOAPODS_VERSION_MINOR_SABlurImageViewObjc 1
+#define COCOAPODS_VERSION_MINOR_SABlurImageViewObjc 2
 #define COCOAPODS_VERSION_PATCH_SABlurImageViewObjc 0
 
