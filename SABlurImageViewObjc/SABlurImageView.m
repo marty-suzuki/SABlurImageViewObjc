@@ -16,6 +16,7 @@
 @property (nonatomic, strong) CALayer *nextBlurLayer;
 @property (nonatomic, assign) NSInteger previousImageIndex;
 @property (nonatomic, assign) CGFloat previousPercentage;
+@property (nonatomic, strong) NSMutableArray *animationBlocks;
 
 @end
 
@@ -66,11 +67,19 @@ static NSInteger const kMaxImageCount = 10;
 }
 
 - (void)dealloc {
+    if (self.cgImages) {
+        [self.cgImages removeAllObjects];
+    }
     self.cgImages = nil;
     if (self.nextBlurLayer) {
         [self.nextBlurLayer removeFromSuperlayer];
     }
     self.nextBlurLayer = nil;
+    if (self.animationBlocks) {
+        [self.animationBlocks removeAllObjects];
+    }
+    self.animationBlocks = nil;
+    [self.layer removeAnimationForKey:kFadeAnimationKey];
     self.previousImageIndex = -1;
     self.previousPercentage = 0.0f;
 }
@@ -191,21 +200,37 @@ static NSInteger const kMaxImageCount = 10;
 
 - (void)startBlurAnimation:(CGFloat)duration {
     NSInteger count = self.cgImages.count;
-    NSInteger index = 0;
+    if (self.animationBlocks == nil) {
+        self.animationBlocks = [NSMutableArray array];
+    }
+    [self.animationBlocks removeAllObjects];
+    __block __weak typeof(self) weakSelf = self;
     for (id cgImage in self.cgImages) {
-        NSTimeInterval delay = (NSTimeInterval)duration / (NSTimeInterval)count * (NSTimeInterval)index++;
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delay * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-            [self blurAnimation:count dutation:duration cgImage:cgImage];
-        });
+        [self.animationBlocks addObject:^{
+            [weakSelf blurAnimation:count dutation:duration cgImage:cgImage];
+        }];
+    }
+    if (self.animationBlocks.count > 0) {
+        void(^animation)() = self.animationBlocks.firstObject;
+        animation();
+        [self.animationBlocks removeObject:animation];
     }
     self.cgImages = [[self.cgImages reverseObjectEnumerator] allObjects].mutableCopy;
 }
 
 #pragma mark - CAAnimationDelegate
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
-    if (flag) {
-        if ([anim isMemberOfClass:[CATransition class]]) {
-            [self.layer removeAnimationForKey:kFadeAnimationKey];
+    if ([anim isMemberOfClass:[CATransition class]]) {
+        [self.layer removeAllAnimations];
+        if (self.animationBlocks) {
+            if (self.animationBlocks.count > 0) {
+                void(^animation)() = self.animationBlocks.firstObject;
+                animation();
+                [self.animationBlocks removeObject:animation];
+            } else {
+                [self.animationBlocks removeAllObjects];
+                self.animationBlocks = nil;
+            }
         }
     }
 }
